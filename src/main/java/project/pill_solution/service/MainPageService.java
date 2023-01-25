@@ -2,6 +2,12 @@ package project.pill_solution.service;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import project.pill_solution.domain.Symptom;
+import project.pill_solution.dto.SymptomResponseDto;
+import project.pill_solution.repository.SymptomRepository;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 @RequiredArgsConstructor
