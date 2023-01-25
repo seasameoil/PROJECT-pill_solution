@@ -1,6 +1,7 @@
 package project.pill_solution.domain;
 
 import jakarta.persistence.*;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import project.pill_solution.converter.StringListConverter;
 
@@ -15,7 +16,7 @@ public class Symptom {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long symptomId;
 
-    @Column
+    @Column @Getter
     private String symptomName;
     @Column
     private String symptomDetail;
@@ -24,6 +25,6 @@ public class Symptom {
     private List<String> cureUrl;
     @Column
     private String imageUrl;
-    @Column
+    @Column @Getter
     private String provideUrl;
 }
