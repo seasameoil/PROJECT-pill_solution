@@ -1,2 +1,7 @@
-package project.pill_solution.service;public class PrescriptionService {
+package project.pill_solution.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class PrescriptionService {
 }
