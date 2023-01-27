@@ -14,7 +14,6 @@ public class PrescriptionDrug {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long prescriptionDrugId;
 
-
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "symptom_id")
     private Symptom symptom;
