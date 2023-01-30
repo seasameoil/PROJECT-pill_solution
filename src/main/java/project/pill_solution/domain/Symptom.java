@@ -17,14 +17,17 @@ public class Symptom {
     private Long symptomId;
 
     @Column @Getter
-    private String symptomName;
-    @Column
-    private String symptomDetail;
+    private String symptomName; // 증상명
+
+    @Column @Getter
     @Convert(converter = StringListConverter.class)
-    @Column
-    private List<String> cureUrl;
+    private List<String> symptomDetail; // 증상에 대한 상세설명
+
     @Column
     private String imageUrl;
+
     @Column @Getter
     private String provideUrl;
+
+
 }
