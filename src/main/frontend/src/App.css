@@ -1,0 +1,55 @@
+.App {
+  text-align: center;
+  font-family: '한글폰트';
+}
+
+@font-face {
+  font-family: '한글폰트';
+  src: url(../public/assets/Gong\ Gothic\ Medium.ttf);
+}
+
+.Card0 {
+  text-align: center;
+  font-family: '한글폰트';
+}
+
+.Figure1 {
+  white-space: pre-wrap;
+  text-align: left;
+}
+
+.body {
+  margin: 0px;
+  font-family: '한글폰트';
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgba(126, 123, 123, 0.719);
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
