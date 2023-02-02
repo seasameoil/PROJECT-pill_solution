@@ -38,8 +38,6 @@ public class MainPageService {
             responseDto.add(tempDto);
         }
 
-
-
         return responseDto;
     }
 }

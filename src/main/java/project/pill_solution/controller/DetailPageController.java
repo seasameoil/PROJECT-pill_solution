@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/{symptomId}")
+@RequestMapping("pill_solution/{symptomId}")
 public class DetailPageController {
 
     private final DetailPageService detailPageService;
