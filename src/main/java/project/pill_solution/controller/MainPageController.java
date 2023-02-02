@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/")
+@RequestMapping("/pill_solution")
 public class MainPageController {
 
     private final MainPageService mainPageService;

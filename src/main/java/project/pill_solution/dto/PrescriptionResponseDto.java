@@ -13,9 +13,7 @@ public class PrescriptionResponseDto {
     
     private String symptomName; // 증상명
 
-    private List<String> symptomDetail; // 증상 세부사항
-
-    private List<String> prescriptionDetail; //처방에 대한 세부 설명
+    private String symptomDetail; // 증상 세부사항
 
     private String drugName; // 약 이름
 
