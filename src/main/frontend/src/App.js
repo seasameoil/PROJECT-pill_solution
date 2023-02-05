@@ -1,4 +1,3 @@
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './logo.svg';
 import './App.css';
@@ -7,11 +6,6 @@ import { Col, Row } from 'react-bootstrap'
 import { Routes, Route, Link, useNavigate, Outlet, Router } from 'react-router-dom'
 import MapContainer from './MapContainer';
 import LandingPage from './LandingPage';
-
-
-
-
-
 
 
 function App() {
@@ -591,6 +585,3 @@ function Map2() {
 
 
 export default App;
-
-
-
