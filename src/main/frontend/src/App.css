@@ -1,11 +1,27 @@
 .App {
+
   text-align: center;
+  font-family: '한글폰트';
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: '한글폰트';
+  src: url(../public/assets/Gong\ Gothic\ Medium.ttf);
 }
+
+.Card0 {
+  text-align: center;
+  font-family: '한글폰트';
+}
+
+
+.body {
+  margin: 0px;
+  font-family: '한글폰트';
+}
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,25 +29,146 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+.Map {
+
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+
 }
 
-.App-link {
-  color: #61dafb;
+
+.Card1 {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  
+}
+
+.Oard {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  
+}
+
+.Card4 {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.Car04 {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.Card5 {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.Card00 {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+  .Card0 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+
+  .Kard0 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .Kard01 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  .Kard02 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .Kard04 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .Kard05 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+
+
+
+
+.Key1 {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.Card004 {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.Card005 {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
