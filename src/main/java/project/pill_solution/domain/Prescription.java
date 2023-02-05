@@ -1,13 +1,12 @@
 package project.pill_solution.domain;
 
 import jakarta.persistence.*;
-
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import project.pill_solution.converter.StringListConverter;
 import project.pill_solution.dto.PrescriptionRequestDto;
-import project.pill_solution.dto.PrescriptionResponseDto;
 
 import java.util.List;
 
@@ -46,7 +45,8 @@ public class Prescription {
     @Convert(converter = StringListConverter.class)
     List<String> cureUrl; // 치료방법 URL + 치료방법 요약
 
-    public void toEntity(Symptom symptom, PrescriptionRequestDto requestDto, String uploadPath, String savePath) {
+    @Builder
+    public Prescription(Symptom symptom, PrescriptionRequestDto requestDto, String uploadPath, String savePath) {
 
         this.symptom = symptom;
         this.prescriptionDetail = requestDto.getSymptomDetail();
