@@ -6,6 +6,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import project.pill_solution.converter.StringListConverter;
+import project.pill_solution.dto.PrescriptionRequestDto;
+import project.pill_solution.dto.PrescriptionResponseDto;
 
 import java.util.List;
 
@@ -23,8 +25,7 @@ public class Prescription {
     private Symptom symptom;
 
     @Column @Getter
-    @Convert(converter = StringListConverter.class)
-    private List<String> prescriptionDetail; // 처방에 대한 세부설명
+    private String prescriptionDetail; // 처방에 대한 세부설명
 
     @Column @Getter
     private String drugName; // 약 이름
@@ -35,16 +36,25 @@ public class Prescription {
     @Column @Getter
     private String drugEffect; // 효과
     
-    @Column
+    @Column(length = 1000)
     private String drugImageUrl; //이미지 URL (저장용)
 
-    @Column @Getter
+    @Column(length = 1000) @Getter
     private String drugProvideImageUrl; //이미지 URL (보여주기용)
 
     @Getter @Setter
     @Convert(converter = StringListConverter.class)
-    List<String> cureUrl; // 치료방법 URL
+    List<String> cureUrl; // 치료방법 URL + 치료방법 요약
 
+    public void toEntity(Symptom symptom, PrescriptionRequestDto requestDto, String uploadPath, String savePath) {
 
-
+        this.symptom = symptom;
+        this.prescriptionDetail = requestDto.getSymptomDetail();
+        this.drugName = requestDto.getDrugName();
+        this.drugEat = requestDto.getDrugEat();
+        this.drugEffect = requestDto.getDrugEffect();
+        this.drugImageUrl = uploadPath;
+        this.drugProvideImageUrl = savePath;
+        this.cureUrl = requestDto.getCureUrl();
+    }
 }

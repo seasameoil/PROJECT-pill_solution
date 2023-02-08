@@ -40,6 +40,7 @@ public class AwsS3Uploader {
         return amazonS3.getUrl(bucket, s3FileName).toString();
     }
 
+
     // 로컬에 파일생성
     private Optional<File> convert(MultipartFile file) throws IOException {
         File convertFile = new File(file.getOriginalFilename());
@@ -65,5 +66,9 @@ public class AwsS3Uploader {
     public void delete(String fileName) {
         log.info("File Delete : " + fileName);
         amazonS3.deleteObject(bucket, fileName);
+    }
+
+    public String getFile(String fileName) {
+        return amazonS3.getUrl(bucket, fileName).toString();
     }
 }

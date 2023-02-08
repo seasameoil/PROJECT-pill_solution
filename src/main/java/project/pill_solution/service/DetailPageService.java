@@ -29,8 +29,7 @@ public class DetailPageService {
 
             PrescriptionResponseDto tempDto = new PrescriptionResponseDto();
             tempDto.setSymptomName(prescription.getSymptom().getSymptomName());
-            tempDto.setSymptomDetail(prescription.getSymptom().getSymptomDetail());
-            tempDto.setPrescriptionDetail(prescription.getPrescriptionDetail());
+            tempDto.setSymptomDetail(prescription.getPrescriptionDetail());
             tempDto.setDrugName(prescription.getDrugName());
             tempDto.setDrugEat(prescription.getDrugEat());
             tempDto.setDrugEffect(prescription.getDrugEffect());
