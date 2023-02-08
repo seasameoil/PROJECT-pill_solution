@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import MapContainer from '../../../../../../../Downloads/PROJECT-pill_solution-oyb/src/main/frontend/src/MapContainer'
+import MapContainer from './MapContainer'
 
 function LandingPage() {
   const [InputText, setInputText] = useState('')

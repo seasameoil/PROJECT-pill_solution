@@ -103,6 +103,7 @@
   .Kard0 {
 
     display: flex;
+    text-align: justify;
     justify-content: center;
     align-items: center;
   
@@ -110,6 +111,7 @@
   .Kard01 {
 
     display: flex;
+    text-align: justify;
     justify-content: center;
     align-items: center;
   
@@ -118,6 +120,7 @@
   .Kard02 {
 
     display: flex;
+    text-align: justify;
     justify-content: center;
     align-items: center;
   
@@ -125,6 +128,7 @@
   .Kard04 {
 
     display: flex;
+    text-align: justify;
     justify-content: center;
     align-items: center;
   
@@ -132,14 +136,20 @@
   .Kard05 {
 
     display: flex;
+    text-align: justify;
     justify-content: center;
     align-items: center;
   
   }
 
+
+
+
+
 .Key1 {
 
   display: flex;
+  text-align: justify;
   justify-content: center;
   align-items: center;
 
@@ -147,6 +157,7 @@
 .Card004 {
 
   display: flex;
+  text-align: justify;
   justify-content: center;
   align-items: center;
 
@@ -155,6 +166,7 @@
 .Card005 {
 
   display: flex;
+  text-align: justify;
   justify-content: center;
   align-items: center;
 
