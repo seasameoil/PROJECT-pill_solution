@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import project.pill_solution.converter.StringListConverter;
+import project.pill_solution.dto.SymptomRequestDto;
 
 import java.util.List;
 
@@ -28,6 +29,17 @@ public class Symptom {
 
     @Column @Getter
     private String provideUrl;
+
+
+    public void toEntity(SymptomRequestDto requestDto, String uploadPath, String savePath){
+
+        this.symptomName = requestDto.getSymptomName();
+        this.symptomDetail = requestDto.getSymptomDetail();
+        this.imageUrl = uploadPath;
+        this.provideUrl = savePath;
+
+    }
+
 
 
 }

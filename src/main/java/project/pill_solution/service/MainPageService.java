@@ -18,6 +18,7 @@ public class MainPageService {
 
     private final SymptomRepository symptomRepository;
 
+
     /**
      * 게시글 목록 가져오기
      * List 안에 이미지, 증상명 제공

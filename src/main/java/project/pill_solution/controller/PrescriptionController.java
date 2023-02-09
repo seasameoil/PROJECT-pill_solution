@@ -12,8 +12,10 @@ import org.springframework.web.multipart.MultipartFile;
 import project.pill_solution.domain.Prescription;
 import project.pill_solution.dto.PrescriptionRequestDto;
 import project.pill_solution.dto.PrescriptionResponseDto;
+import project.pill_solution.dto.SymptomRequestDto;
 import project.pill_solution.service.AwsS3Uploader;
 import project.pill_solution.service.PrescriptionService;
+import project.pill_solution.service.SymptomService;
 
 import java.io.IOException;
 
@@ -22,6 +24,7 @@ import java.io.IOException;
 @RequestMapping(value = "/pill_solution")
 public class PrescriptionController {
     private final PrescriptionService prescriptionService;
+    private final SymptomService symptomService;
 
     @PostMapping("/upload")
     public ResponseEntity upload(@RequestPart(value = "image")MultipartFile image,
@@ -31,4 +34,17 @@ public class PrescriptionController {
 
         return new ResponseEntity<>("success", HttpStatus.CREATED);
     }
+
+    @PostMapping("/symptom/upload")
+    public ResponseEntity<?> symptomUpload(@RequestPart(value = "image")MultipartFile image,
+                                           @RequestPart(value = "symptom")SymptomRequestDto requestDto) throws IOException{
+
+        symptomService.uploadSymptom(image, requestDto);
+
+        return new ResponseEntity<>("success", HttpStatus.CREATED);
+
+    }
+
+
+
 }

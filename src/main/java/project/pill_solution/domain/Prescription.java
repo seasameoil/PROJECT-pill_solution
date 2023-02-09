@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import project.pill_solution.converter.StringListConverter;
 import project.pill_solution.dto.PrescriptionRequestDto;
+import project.pill_solution.dto.PrescriptionResponseDto;
 
 import java.util.List;
 
