@@ -33,7 +33,7 @@ public class DetailPageService {
             tempDto.setDrugName(prescription.getDrugName());
             tempDto.setDrugEat(prescription.getDrugEat());
             tempDto.setDrugEffect(prescription.getDrugEffect());
-            tempDto.setDrugProvideImageUrl(prescription.getDrugProvideImageUrl());
+            tempDto.setDrugProvideImageUrl(prescription.getDrugImageUrl());
             tempDto.setCureUrl(prescription.getCureUrl());
 
             responseDto.add(tempDto);

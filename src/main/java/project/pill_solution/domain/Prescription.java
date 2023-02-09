@@ -36,7 +36,7 @@ public class Prescription {
     @Column @Getter
     private String drugEffect; // 효과
     
-    @Column(length = 1000)
+    @Column(length = 1000) @Getter
     private String drugImageUrl; //이미지 URL (저장용)
 
     @Column(length = 1000) @Getter

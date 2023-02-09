@@ -27,8 +27,8 @@ public class PrescriptionService {
     public void upload(MultipartFile image, PrescriptionRequestDto requestDto) throws IOException {
 
         //이미지 업로드
-        String fileName = awsS3Uploader.upload(image); //저장용 이미지 URL
-        String savePath = awsS3Uploader.getFile(fileName); //보여주는 이미지 URL
+        String fileName = awsS3Uploader.upload(image); //보여주는 이미지 URL
+        String savePath = awsS3Uploader.getFile(fileName); //저장용 이미지 URL
 
         Symptom symptom = symptomRepository.findById(requestDto.getSymptomId())
                 .orElseThrow(EntityNotFoundException::new);
