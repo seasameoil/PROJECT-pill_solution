@@ -12,8 +12,6 @@ public class PrescriptionRequestDto {
 
     private Long SymptomId; // 증상 id
 
-    private String symptomName; // 증상명
-
     private String symptomDetail; // 증상 세부사항
 
     private String drugName; // 약 이름

@@ -9,7 +9,6 @@ import org.springframework.web.multipart.MultipartFile;
 import project.pill_solution.domain.Prescription;
 import project.pill_solution.domain.Symptom;
 import project.pill_solution.dto.PrescriptionRequestDto;
-import project.pill_solution.dto.PrescriptionResponseDto;
 import project.pill_solution.repository.PrescriptionRepository;
 import project.pill_solution.repository.SymptomRepository;
 
@@ -34,12 +33,15 @@ public class PrescriptionService {
         Symptom symptom = symptomRepository.findById(requestDto.getSymptomId())
                 .orElseThrow(EntityNotFoundException::new);
 
-        Prescription prescription = new Prescription();
-
         //DTO -> Entity
-        prescription.toEntity(symptom, requestDto, fileName, savePath);
+        Prescription pre = Prescription.builder()
+                .symptom(symptom)
+                .requestDto(requestDto)
+                .uploadPath(fileName)
+                .savePath(savePath)
+                .build();
 
         //저장
-        prescriptionRepository.save(prescription);
+        prescriptionRepository.save(pre);
     }
 }
