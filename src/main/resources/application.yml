@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mariadb:pillsolution.cvjiwbuuly4r.ap-northeast-2.rds.amazonaws.com #jdbc:h2:tcp://localhost/~/pillSolution
+    url: jdbc:mariadb://pillsolution.cvjiwbuuly4r.ap-northeast-2.rds.amazonaws.com:3306/pill_solution #jdbc:h2:tcp://localhost/~/pillSolution
     username:
     password:
     driver-class-name: org.mariadb.jdbc.Driver #org.h2.Driver
