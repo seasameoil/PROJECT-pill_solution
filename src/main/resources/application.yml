@@ -1,9 +1,9 @@
 spring:
   datasource:
-    url: jdbc:h2:tcp://localhost/~/pillSolution
-    username: sa
+    url: #jdbc:h2:tcp://localhost/~/pillSolution
+    username:
     password:
-    driver-class-name: org.h2.Driver
+    driver-class-name: #org.h2.Driver
 
   jpa:
     hibernate:
@@ -17,8 +17,8 @@ spring:
 cloud:
   aws:
     credentials:
-      access-key: AKIA36W7FXMSJPPJ4FW3
-      secret-key: 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
+      access-key:
+      secret-key:
     s3:
       bucket: pill-solution-bucket
     region:
