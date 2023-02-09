@@ -25,7 +25,7 @@ public class SymptomService {
     public void uploadSymptom(MultipartFile image, SymptomRequestDto requestDto) throws IOException {
 
         // 이미지 업로드
-        String fileName = awsS3Uploader.upload(image); //저장용 이미지 URL
+        String fileName = awsS3Uploader.upload(image);
         String savePath = awsS3Uploader.getFile(fileName);
 
         Symptom symptom = new Symptom();

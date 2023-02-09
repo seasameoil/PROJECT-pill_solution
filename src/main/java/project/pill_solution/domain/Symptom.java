@@ -24,10 +24,10 @@ public class Symptom {
     @Convert(converter = StringListConverter.class)
     private List<String> symptomDetail; // 증상에 대한 상세설명
 
-    @Column
+    @Column(length = 1000) @Getter
     private String imageUrl;
 
-    @Column @Getter
+    @Column(length = 1000) @Getter
     private String provideUrl;
 
 
